@@ -1093,7 +1093,7 @@ footer {
     <li><a href="#how">How It Works</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#who">Who We Serve</a></li>
-    <li><a href="#cta" class="nav-cta">Book a Call</a></li>
+    <li><a href="https://calendly.com/liana-thecorda/30min" target="_blank" class="nav-cta">Book a Call</a></li>
   </ul>
 </nav>
 
@@ -1116,7 +1116,7 @@ footer {
   </p>
 
   <div class="hero-actions">
-    <a href="#cta" class="btn-primary">
+    <a href="https://calendly.com/liana-thecorda/30min" target="_blank" class="btn-primary">
       Build My Pipeline <span class="btn-arrow">→</span>
     </a>
     <a href="#how" class="btn-ghost">See How It Works ↓</a>
@@ -1129,7 +1129,7 @@ footer {
     </div>
     <div class="hero-metric">
       <div class="hero-metric-num">48<span>h</span></div>
-      <div class="hero-metric-label">Time to First Reply</div>
+      <div class="hero-metric-label">Avg. Time to First Reply</div>
     </div>
     <div class="hero-metric">
       <div class="hero-metric-num">100<span>%</span></div>
@@ -1485,7 +1485,7 @@ footer {
       <div class="metric-card">
         <div class="metric-value">30<span>d</span></div>
         <div class="metric-label">Time to First Meeting</div>
-        <div class="metric-sub">From system launch</div>
+        <div class="metric-sub">Average from system launch</div>
       </div>
       <div class="metric-card">
         <div class="metric-value">0<span>h</span></div>
@@ -1505,10 +1505,9 @@ footer {
     <h2 class="cta-title">Ready to build your<br><em>outbound pipeline?</em></h2>
     <p class="cta-desc">Book a 30-minute strategy call. We'll map out exactly what a Corda pipeline looks like for your market, asset class, and deal goals.</p>
 
-    <div class="cta-form">
-      <input type="email" class="cta-input" placeholder="your@email.com">
-      <button class="cta-submit">Book a Call</button>
-    </div>
+    <a href="https://calendly.com/liana-thecorda/30min" target="_blank" class="btn-primary" style="display:inline-flex; font-size:16px; padding:18px 40px; margin-bottom:20px;">
+      Book a 30-Minute Strategy Call <span class="btn-arrow">→</span>
+    </a>
     <p class="cta-fine">No commitment required · Results typically within 30 days</p>
   </div>
 </section>
@@ -1519,7 +1518,7 @@ footer {
   <ul class="footer-links">
     <li><a href="#">How It Works</a></li>
     <li><a href="#">Services</a></li>
-    <li><a href="#">Book a Call</a></li>
+    <li><a href="https://calendly.com/liana-thecorda/30min" target="_blank">Book a Call</a></li>
     <li><a href="#">thecorda.com</a></li>
   </ul>
   <div class="footer-copy">© 2025 Corda. All rights reserved.</div>
@@ -1545,16 +1544,7 @@ if (track) {
   track.parentElement.appendChild(clone);
 }
 
-// CTA button
-document.querySelector('.cta-submit')?.addEventListener('click', () => {
-  const input = document.querySelector('.cta-input');
-  if (input.value && input.value.includes('@')) {
-    input.value = '';
-    input.placeholder = '✓ We\'ll be in touch shortly';
-    document.querySelector('.cta-submit').textContent = 'Sent ✓';
-    document.querySelector('.cta-submit').style.background = '#5CC88A';
-  }
-});
+
 </script>
 </body>
 </html>
